@@ -16,6 +16,6 @@ scripts/generate_release_site.rb --check
 
 The site is static only. Do not add backend code, analytics, ads, account flows, comments, public maps, or server sync here.
 
-Deployment notes live in `docs/development/static-site-deployment.md`. The GitHub Pages workflow deploys this folder only after the generator and metadata validator pass.
+Deployment notes live in `docs/development/static-site-deployment.md`. In the current private-source setup, publish this generated folder to the public static site repository with `scripts/publish_release_site_repo.sh`.
 
 Use `scripts/release_preflight.sh --full --live` before final App Store submission to verify the generated site, DNS, live URLs, and support mail readiness together.
