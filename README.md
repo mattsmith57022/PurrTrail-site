@@ -18,4 +18,4 @@ The site is static only. Do not add backend code, analytics, ads, account flows,
 
 Deployment notes live in `docs/development/static-site-deployment.md`. In the current private-source setup, publish this generated folder to the public static site repository with `scripts/publish_release_site_repo.sh`.
 
-Use `scripts/release_preflight.sh --full --live` before final App Store submission to verify the generated site, DNS, live URLs, and support mail readiness together.
+Use `PURRTRAIL_DEVELOPMENT_TEAM=TEAMID scripts/release_preflight.sh --full --screenshots --live --signing` before final App Store submission to verify the generated site, App Store screenshot set, public Pages configuration, exact GitHub Pages DNS, live URLs, support mail, and local signing readiness together.
